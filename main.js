@@ -21,5 +21,16 @@ function trungbinh() {
 
 //BÀI 3: QUY ĐỔI TIỀN
 function doitien() {
-	var tagDoLaMy = parseFloat;
+	var tagDoLaMy = parseFloat(document.getElementById("dolaMy").value);
+    var ketQua = tagDoLaMy * 23500;
+    document.getElementById("ketQuaDoiTien").innerHTML = ketQua;
+}
+
+//BÀI 4: CHU VI DIEN TICH HCN
+function chuViDienTich() {
+    var tagDai = parseFloat(document.getElementById("dai").value);
+    var tagRong = parseFloat(document.getElementById("rong").value);
+    var chuVi = (tagDai + tagRong) * 2;
+    var dienTich = tagDai * tagRong;
+    document.getElementById("ketQuaHCN").innerHTML = "Chu vi = " + chuVi +"Diện Tich = " + dienTich;
 }
