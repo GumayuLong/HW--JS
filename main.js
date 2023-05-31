@@ -34,3 +34,11 @@ function chuViDienTich() {
     var dienTich = tagDai * tagRong;
     document.getElementById("ketQuaHCN").innerHTML = "Chu vi = " + chuVi +"Diện Tich = " + dienTich;
 }
+
+//BÀI 5
+function tongso(){
+    var tagSoNHangChuc = Math.floor(document.getElementById("soN").value / 10);
+    var tagSoNHangDV = document.getElementById("soN").value % 10;
+    var Result = tagSoNHangChuc + tagSoNHangDV;
+    document.getElementById("ketQuaTongSo").innerHTML = Result;
+}
